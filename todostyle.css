@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background:linear-gradient(135deg, pink, blue);
+}
+.container{
+    width: 100%;
+    background-color: white;
+    max-width: 500px;
+    margin: 100px auto 50px;
+    padding: 12px 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.652);
+}
+.image-todo{
+    margin-right: 10px;
+}
+.title-1{
+    font-size: x-large;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(111, 111, 111, 0.112);
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.content input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+}
+.content button{
+    padding:10px 25px ;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: orangered;
+    cursor: pointer;
+}
+ul li {
+    list-style: none;
+    font-size: larger;
+    margin: 10px;
+    text-transform: capitalize;
+    padding:12px 8px 12px 40px;
+    position: relative;
+}
+ul li input[type=checkbox]{
+    margin: 10px;
+}
+ ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-circle-outline-512.png");
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+} 
+ul li.checked{
+    color : #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Eo_circle_green_checkmark.svg/1200px-Eo_circle_green_checkmark.svg.png");
+
+}
+ul li span{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul li span:hover{
+    background-color: aliceblue;
+}
+
